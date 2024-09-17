@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ejemplo de una página HTML que usa todas las etiquetas HTML5">
+    <meta name="keywords" content="HTML5, etiquetas, ejemplo">
+    <meta name="author" content="Tu Nombre">
+    <title>Tarea 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tarea 1</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Sección 1</a></li>
+                <li><a href="#section2">Sección 2</a></li>
+                <li><a href="#section3">Sección 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section1">
+            <h2>Sección 1: Estructura Básica</h2>
+            <p>Este es un párrafo que muestra cómo se utiliza la etiqueta <code>&lt;p&gt;</code>.</p>
+            <p>El siguiente es un bloque de código:</p>
+            <pre><code>function example() {
+    console.log("Hello, World!");
+}</code></pre>
+            <img src="ImagenEjemplo.jpg" alt="Ejemplo de Imagen" width="300">
+            <figcaption>Ejemplo imagen</figcaption>
+        </section>
+
+        <section id="section2">
+            <h2>Sección 2: Listas y Enlaces</h2>
+            <ul>
+                <li>Elemento de lista desordenada</li>
+                <li>Otro elemento</li>
+            </ul>
+            <ol>
+                <li>Elemento de lista ordenada</li>
+                <li>Otro elemento</li>
+            </ol>
+            <a href="https://github.com/" target="_blank">Enlace a un sitio web</a>
+            <map name="imagenMapa">
+                <area shape="rect" coords="34,44,270,350" href="https://github.com/" alt="Ejemplo">
+            </map>
+            <img src="ImagenEjemplo.jpg" usemap="#imagenMapa" alt="Mapa de imagen">
+        </section>
+
+        <section id="section3">
+            <h2>Sección 3: Multimedia y Otros Elementos</h2>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento <code>&lt;audio&gt;</code>.
+            </audio>
+            <video controls width="600">
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento <code>&lt;video&gt;</code>.
+            </video>
+            <details>
+                <summary>Detalles adicionales</summary>
+                <p>Información adicional .</p>
+            </details>
+            <dialog open>
+                <p>Este es un diálogo de ejemplo.</p>
+                <button onclick="this.closest('dialog').close()">Cerrar</button>
+            </dialog>
+            <iframe src="https://www.youtube.com/watch?v=z8acUAG_IoY" title="Video de YouTube" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <footer>
+            <address>
+                Contacto: <a href="henderry04@gmail.com">henderry04@gmail.com</a>
+            </address>
+            <p>&copy; 2024. Todos los derechos reservados.</p>
+        </footer>
+    </main>
+</body>
+</html>
